@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea{
+    resize: none;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.taskForm{
+    @apply p-4 mt-10 bg-slate-100 flex flex-col flex-wrap h-44 w-2/4 m-auto shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)];
+}
+
+.taskInputTitle{
+    @apply h-12 mb-5 w-3/4 flex items-center;
+}
+
+.taskInputDescription{
+    @apply w-3/4 flex items-center;
+}
+
+.taskFormBtn{
+    @apply w-20 h-10 mt-auto mb-auto rounded-md;
+}
+
+.taskList{
+    @apply  bg-slate-100 w-2/5 m-auto mt-5 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)];
+}
+
+.taskCard{
+    @apply p-3 border-0 border-b grid border-gray-500;
+}
+
+.taskDescription {
+    @apply text-gray-600 overflow-hidden break-all;
+}
+
+.deleteTaskBtn{
+    @apply ml-auto mr-auto bg-gray-400 h-10 px-4 hover:bg-red-600 hover:text-white rounded-md;
+}
